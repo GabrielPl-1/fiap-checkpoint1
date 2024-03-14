@@ -32,11 +32,28 @@ docker build -t ping .
 
 spring.profiles.active=dev
 
+Profile dev
 ```
-docker run -d -p 8080:8080 -e PROFILE=<prd|dev|stg> fiap-checkpoint1
+docker run -d -p 8080:8080 -e PROFILE=dev 
+gapenna/fiap-checkpoint1
 ```
 
+Profile stg
+```
+docker run -d -p 8080:8080 -e PROFILE=stg 
+gapenna/fiap-checkpoint1
+```
+
+Profile prd
+```
+docker run -d -p 8080:8080 -e PROFILE=prd 
+gapenna/fiap-checkpoint1
+```
+
+
 * Executar container a partir do Docker Hub
+
+
 
 ```
 docker run -d -p 8080:8080 -e PROFILE=stg gapenna/fiap-checkpoint1
