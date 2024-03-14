@@ -25,7 +25,7 @@ Aplicação Java proposta como Checkpoint 1 do primeiro semestre da matéria de 
 * Criação de imagem
 
 ```
-docker build -t ping .
+docker build -t fiap-checkpoint1 .
 ```
 
 * Executar container
